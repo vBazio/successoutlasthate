@@ -8,28 +8,49 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Success Outlast Hate</h1>
+        <h1>Success Outlast Hate</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Shop</a></li>
+                <li><a href="#">Products</a></li>
                 <li><a href="#">Contact</a></li>
+                <li><a href="#">Cart</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Our Mission</h2>
-            <p>At Success Outlast Hate, we believe in promoting positivity and self-expression through fashion.</p>
+        <section id="products">
+            <div class="product-card">
+                <img src="product1.jpg" alt="Product 1">
+                <h2>Product 1</h2>
+                <p>$49.99</p>
+                <label for="color1">Choose Color:</label>
+                <select id="color1">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+                <label for="size1">Choose Size:</label>
+                <select id="size1">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                </select>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Add more products similarly -->
         </section>
-        <section>
-            <h2>Shop Our Collection</h2>
-            <p>Discover our unique streetwear styles that inspire confidence and individuality.</p>
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be added here dynamically -->
+            </ul>
+            <button id="checkout">Checkout</button>
         </section>
     </main>
     <footer>
         <p>&copy; 2026 Success Outlast Hate. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
